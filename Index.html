@@ -19,7 +19,7 @@
           <a href="">LISTAS ACADEMIAS   </a> &emsp;
           <a href="">TABLAS DE CLUBES   </a> &emsp;
           <a href="Todosobremipersona.html" target="_blank" > TODO SOBRE MI PERSONA  </a> 
- 
+         
     </nav> 
         
     <h1 id="PRESENTACION"> </h1>
@@ -44,7 +44,7 @@
     <H4> JAVASCCRIPT </H4>
     <H3> EVIDENCIA 4: </H3>
     <H4> FIREBASE </H4>
-    <hr style="height: 2px; border: darkblue ; background-color: yellow; (210, 238, 84 ) ">
+    
 
     <br>
     <h2>USO DE LINKS</h2>
@@ -65,14 +65,22 @@
      <img src="Escudos_clud/escudo 3.png" alt="IMAGEN NO CARGA" width="400px">
      <img src="Escudos_clud/escudo 4.png" alt="IMAGEN NO CARGA" width="400px">
 
+
      <h2> USO DE LISTAS </h2>
-     <P> CONOCIMIENTOS PREVIOS PARA HTML EN EL ORDEN METODOLOGICO </P>
-     <li> OFMATICA BASICA </li>
-     <li> GESTION DE CARPETAS </li>
-     <li> ISTALACION Y DESINSTALACION DE PROGROMAS </li>
+
+
+    <div style="font-family: Arial, Helvetica, sans-serif;background-color: aqua; font-size: 20px ;font-style: italic;"> 
+    <P> CONOCIMIENTOS PREVIOS PARA HTML EN EL ORDEN METODOLOGICO </P>
+     <ol type="A"> 
+        <li> OFMATICA BASICA </li>
+        <li> GESTION DE CARPETAS </li>
+        <li> ISTALACION Y DESINSTALACION DE PROGROMAS </li>
+
+    </div>
 
     </ol>
-     
+    
+     <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: blue; font-size: 20px ;font-style: initial;"   >
     <p>Caulidades y buenas practicas a seguir</p>
       <ul>
            <li>Capacitacion de atencion</li>
@@ -80,7 +88,8 @@
            <li>Repasar temas t realizar tareas en casa</li>
 
       </ul>
-
+    </div>
+    
       <h2>USO DE TABLAS </h2>
       <p>INFORMACION DE CLUBES</p>
 
@@ -137,6 +146,40 @@
      <hr> 
      <h2> USO DE AUDIO </h2>
      
+
+
+ <h2> USO DE FORMULARIO </h2>
+ <form action="Todosobremipersona.html "  method="post"   >
+
+  <P> <label for="nombre"> Nombre: <input type="text" id="nombre" required ></label>  </P>
+  <p>  <label for="apellido"> Apellido: <input type="text" id="apellido"></label>  </p>
+  <p>   <label for="edad"> Edad <input type="number"id="edad" min="18" max="80" > </label> </p>
+
+  <p> 
+    <label for="observacion"> Obsevaciones:
+        <textarea name="observacion" id="observacion" style="height: 180px ; width: 300px; font-size: 25px;">
+
+        </textarea> 
+    </label>
+ </p>
+
+
+<p> 
+  <label for="estatra"> Estatura
+    <select name="grupoestatura" id="Estatura">
+     <option value="selecione"> selecione </option>
+     <option value="menor de 1.50"> menor de 1.50 </option>
+     <option value="de 1.50 a 1.69"> de 1.50 a 1.59 </option>
+     <option value="de 1.60 a 1.69"> de 1.60 a 1.69 </option>
+     <option value="mayor a igual a 1.70m"> mayor o igual a 1.70m  </option>
+    </select>
+  </label>
+</p>
+
+
+ </form>
+
+ 
 
 
 
