@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi primera pagina wed </title>
+    <title> Mi primera pagina wed </title> 
+    <link rel="stylesheet"type="text/css" href="Estilos.css" />
 </head>
 
 <body> 
@@ -151,8 +152,8 @@
  <h2> USO DE FORMULARIO </h2>
  <form action="Todosobremipersona.html "  method="post"   >
 
-  <P> <label for="nombre"> Nombre: <input type="text" id="nombre" required ></label>  </P>
-  <p>  <label for="apellido"> Apellido: <input type="text" id="apellido"></label>  </p>
+  <P> <label for="nombre"> Nombre: <input type="text" id="nombre" name="nombre" ></label>  </P>
+  <p>  <label for="apellido"> Apellido: <input type="text" id="apellido" name="apellido"></label>  </p>
   <p>   <label for="edad"> Edad <input type="number"id="edad" min="18" max="80" > </label> </p>
 
   <p> 
@@ -173,13 +174,65 @@
      <option value="de 1.60 a 1.69"> de 1.60 a 1.69 </option>
      <option value="mayor a igual a 1.70m"> mayor o igual a 1.70m  </option>
     </select>
+
+
   </label>
+
 </p>
 
+</form>
 
- </form>
+ <P><label></label>Ciclo actual</P>
+ <input style="scale:1.5 ;" id="primero"type="radio" name="Ciclo" value="primero">
+ <label for="primero"> Primero </label><br>
+ <input style="scale:1.5 ;" id="segundo"type="radio" name="ciclo" value="segundo">
+ <label for="segundo"> Segundo </label><br>
+ <input style="scale:1.5 ;" id="tercero"type="radio" name="ciclo" value="tercero">
+ <label for="tercero"> Tercero </label><br>
+ <input style="scale:1.5 ;" id="cuarto" type="radio" name="ciclo" value="cuarto">
+ <label for="cuarto"> Cuarto </label><br>
+ <input style="scale:1.5 ;" id="quinto" type="radio" name="ciclo" value="quinto">
+ <label for="quinto"> Quinto </label><br>
+ <input style="scale:1.5 ;" id="sexto" type="radio"  name="ciclo" value="sexto">
+ <label for="sexto"> Sexto </label><br>
+
+
+ <label for="fecha">SELECION fecha 
+ <input type="date" style="font-size: 25px;" name="fecha" id="fecha" >
+
+ </label>
 
  
+ <br><br>
+
+ <label for="clave"  > Contraseña: 
+  <input type="password" id="clave" name="clave" minlength="8" maxlength="12" 
+          placeholder="Minimo 8 y maximo 12"  >
+
+</label>
+
+<br><br>
+
+<label for="correo"  > Correo electronico: 
+<input type="email" id="correo" name="correo"   placeholder="solo @certus.edu.pe" 
+ pattern="[a-zA-Z0-9]+@certus\.edu.\.pe" >
+   
+</label>
+
+<br><br>
+
+<label for="resetear"  > LIMPIAR 
+  <input type="reset" id="resetear" name="resetear"     >
+
+</label>
+
+ <br><br>
+
+<button type="submit" style="font-size: 25px;"  >  ENVIAR   </button>
+
+</form>
+
+
 
 
 
