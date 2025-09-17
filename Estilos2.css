@@ -104,6 +104,107 @@ color: blue;
     
 }
 
+.clase_relative_index{
+    font-size: 20px ;
+    background-color: aquamarine;
+    height: 250px ;
+    width: 200px ;
+}
+
+.clase_relative_index:hover{
+    position: relative ; 
+    top:  100px ;   
+    left: 100px ;
+    z-index: -10 ;
+}
+
+.clase_absolute {
+    font-size: 20px;
+    background-color: yellow;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.clase_relative2 {
+    font-size: 20px;
+    background-color: rgb(187, 218, 77) ;
+    height: 250px;
+    position: relative;
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color: rgb(187, 218, 77);
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 150px;
+    left: 600px;
+    z-index: -5;
+}
+
+.clase_Fixed {
+    height: 100px;
+    width: 150px; 
+    position:fixed;
+    left: 700px; 
+    bottom: 0px;
+    z-index: -5;
+}
 
 
 
+.marca_agua {
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 999 ;
+}
+
+.clase_Sticky {
+    position: sticky;
+    font-size: 40px;
+    top: 0px;
+    left: 40px;
+    height: 300px;
+}
+
+.tiponone {
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+    display: none;
+}
+
+.tipohidden {
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+    visibility: hidden;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    gap: 15px; /* Espacio entre celdas */
+  }
+  
+  .item img {
+       max-width: 100%; /* Para que no se desborde */
+  }
+  
+  .item {
+   display: flex;
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    font-size: 30px;
+     justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+  }
+  
