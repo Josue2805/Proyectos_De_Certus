@@ -105,106 +105,206 @@ color: blue;
 }
 
 .clase_relative_index{
-    font-size: 20px ;
-    background-color: aquamarine;
-    height: 250px ;
-    width: 200px ;
-}
-
-.clase_relative_index:hover{
-    position: relative ; 
-    top:  100px ;   
-    left: 100px ;
-    z-index: -10 ;
-}
-
-.clase_absolute {
     font-size: 20px;
-    background-color: yellow;
+    background-color: #99a7d6;
     height: 250px;
     width: 200px;
-    position: absolute;
-    top: 200px;
+}
+.clase_relative_index:hover{
+    position: relative;
+    top: 100px;
     left: 100px;
+    z-index: -10;
 }
 
-.clase_relative2 {
+.clase_Absolute {
     font-size: 20px;
-    background-color: rgb(187, 218, 77) ;
-    height: 250px;
-    position: relative;
+    background-color: #99a7d6;
+    height: 170px;
+    width: 180px;
+    position:absolute;
+    top: 15px;
+    left: 700px;
+
 }
+
+.clase_Relative2 {  /*esta clase es para interactuar con clase absolute */
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+    position:relative;
+  }
 
 .clase_AbsoluteRelative {
     font-size: 20px;
-    background-color: rgb(187, 218, 77);
+    background-color: rgb(187, 218, 77); 
     height: 200px;
     width: 150px;
     position: absolute;
-    bottom: 150px;
-    left: 600px;
-    z-index: -5;
-}
+    bottom: 200px;
+    left: 800px;
+    z-index: 5;
+ }
 
-.clase_Fixed {
-    height: 100px;
-    width: 150px; 
-    position:fixed;
-    left: 700px; 
+ 
+ .clase_Fixed {
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    left: 400px;
     bottom: 0px;
-    z-index: -5;
-}
+    z-index: -5;  /* atras del texto */
 
-
-
-.marca_agua {
+ }
+ .marca_agua {
     opacity: 0.1;
     pointer-events: none;
-    z-index: 999 ;
-}
+    z-index: 999;
+ }
 
-.clase_Sticky {
-    position: sticky;
+ .clase_Sticky {
+    height: 200px;
     font-size: 40px;
-    top: 0px;
+    position: sticky;
     left: 40px;
-    height: 300px;
-}
+    top: 0px;
+   
 
-.tiponone {
+ }
+
+
+ .class_float_right2{
+    float:right;
+    background-color: aqua;
+    margin: 5px;
+
+
+ }
+ 
+.tiponone { /*estilo display none */
+    
     background-color: blue;
     font-size: 20px;
     margin: 20px;
-    color: aquamarine;
-    display: none;
-}
-
-.tipohidden {
+    color:aquamarine;
+    display:none;
+  }
+  .tipohidden { /*estilo display hidden */
+        
     background-color: blue;
     font-size: 20px;
     margin: 20px;
-    color: aquamarine;
+    color:aquamarine;
     visibility: hidden;
+  }
+
+.enlinea {    /* display tipo inline */
+    background-color: red;
+    display:inline;
+    font-size: 30px;
+    margin: 2px;
+    color: beige;
+    width: 800px;    /* width ni height funcionan en inline*/
+    height: 1000px;
+}
+
+.tipoinlineblock {
+    background-color: red;
+    display:inline-block;
+    font-size: 30px;
+    margin: 10px;
+    color: rgba(228, 228, 9, 0.884);
+    width: 200px;    /* width y height si funcionan en inline-block*/
+    height:100px;
+
+}
+
+
+.tipoflex {
+    background-color: rgb(154, 154, 197);
+    font-size: 20px;
+    margin: 20px;
+    color:rgb(0, 17, 11);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
 }
 
 .contenedor-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
-    gap: 15px; /* Espacio entre celdas */
-  }
-  
-  .item img {
-       max-width: 100%; /* Para que no se desborde */
-  }
-  
-  .item {
-   display: flex;
-    background-color: lightcoral;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #333;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 15px; /* Espacio entre celdas */
+}
+
+.item img {
+     max-width: 100%; /* Para que no se desborde */
+}
+
+.item {
+ display: flex;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  font-size: 30px;
+   justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+}
+
+
+#Mivideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /*Asegura que el video ocupe al menos todo el ancho de su contenedor */
+    min-height: 100%; /*Asegura que el video ocupe al menos todo el alto de su contenedor */
+    width: auto;
+    height: auto;
+    z-index: -1;
+
+    background-size: cover; /*imagen de fondo cubra todo el contenedor,
+                             incluso si tienes que recortarla o agrandarla. */
+    overflow: hidden; /*Oculta cualquier contenido que se salga del área visible del elemento */
+}
+
+.claseNav {
+    background-color: greenyellow;
     font-size: 30px;
-     justify-content: center;  /* Centrar horizontalmente */
-    align-items: center;      /* Centrar verticalmente */
-  }
-  
+    margin: 20px;
+    padding-inline: 0px;
+    color: black;
+    display: inline;
+    list-style-type: none;
+}
+
+.claseNav a:hover {
+    background-color: chocolate;
+}
+
+.claseNav ul {
+    list-style-type: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clase li a {
+    text-decoration: none;
+    padding: 6px 11px;
+    display: block;
+}
+
+.claseNav> li {
+    float: left;
+}
+
+.claseNav li u {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.claseNav li:hover>ul {
+    display: block;
+}
