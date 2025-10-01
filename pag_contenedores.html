@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página Web ESTRUCTURADA con contenedores</title>
     <link rel="stylesheet"type="text/css" href="Estilos2.css">
+    <script   type="text/javascript"   src="Script1.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
                     <a class="claseNav"  href="https://www.dior.com/mujer/" > MUJER </a>
                 </li>
                 <li>
-                    <a class="claseNav"  href="https://www.dior.com/hombre/"> HOMBRE 0</a>
+                    <a class="claseNav"  href="https://www.dior.com/hombre/"> HOMBRE </a>
                 </li>
             </ul>
 
@@ -373,7 +374,7 @@
                 Contenedor resultado en JAVASCRIPT
             <div id="resultado" style="font-size: 30px;">
                 <p> Operacion suma </p>
-                <div>
+            </div>
 
                 </div>
              <script>
@@ -388,21 +389,137 @@
                 " <br>El valor de la suma de "+valor1+" con "+valor2+" es: "+suma+ "<br>" 
                 + "El valor de la resta de "+ valor1+" con "+valor2 +" es : "+resta;  
 
-
-
-
              </script>
 
+            <h2> USO DE FOR clasico y condicionales en una class </h2>
+
+            <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+            <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+            <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+            <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+
+            <button style="font-size:25px ;" onclick="FUsoFor1()">
+            Reporte de classFOR1</button>
+            <button style="font-size:25px ;" onclick="FUsoForEach1()">
+            Reporte de classFOR1 con FOREACH</button>
+
+            <button style="font-size:25px ;" onclick="FEliminarConcat()">
+            Eliminar concatenacion</button>
 
             </article>
 
+ <article>
+<h2> USO DE JAVASCCRIPT EN FORMULARIOS </h2>
+
+<form action="Todosobremipersona.html "  method="post"   >
+
+    <P> <label for="nombre"> Nombre: <input type="text" id="nombre" name="nombre" class="datosPersonales" ></label>  </P>
+    <p>  <label for="apellido"> Apellido: <input type="text" id="apellido" name="apellido" class="datosPersonales" ></label>  </p>
+    <p>   <label for="edad"> Edad <input type="number"id="edad" min="18" max="80" class="datosPersonales" > </label> </p>
+  
+    <p> 
+      <label for="observacion"> Obsevaciones:
+          <textarea name="observacion" id="observacion" style="height: 180px ; width: 300px; font-size: 25px;">
+  
+          </textarea> 
+      </label>
+   </p>
+  
+  
+  <p> 
+    <label for="estatra"> Estatura
+      <select name="grupoestatura" id="Estatura">
+       <option value="selecione"> selecione </option>
+       <option value="menor de 1.50"> menor de 1.50 </option>
+       <option value="de 1.50 a 1.69"> de 1.50 a 1.59 </option>
+       <option value="de 1.60 a 1.69"> de 1.60 a 1.69 </option>
+       <option value="mayor a igual a 1.70m"> mayor o igual a 1.70m  </option>
+      </select>
+  
+  
+    </label>
+  
+  </p>
+  
+  <p>
+    
+    <label> Curso llevados  </label>
+  <br>
+  <input type="checkbox" name="cursos" value="matematica" id="matematica">
+  <label for="matematica"> Matematica </label>
+  <br>
+  <input type="checkbox" name="cursos" value="LENGUAJE DSS" id="LDSS">
+  <label for="LDSS"> LENGUAJE DSS </label>
+  <br>
+  <input type="checkbox" name="cursos" value="Introduccion investigacion" id="INTRO_INV">
+  <label for="INTRO_INV"> Introduccion investigacion </label>
+  <br>
+  <input type="checkbox" name="cursos" value="NUEvas tendencias" id="Nuevas_Tendencias">
+  <label for="Nuevas_Tendencias"> NUEvas tendencias </label>
+  <br>
+  
+  </p>
+  
+  
+   <P><label></label>Ciclo actual</P>
+   <input style="scale:1.5 ;" id="primero"type="radio" name="Ciclo" value="primero">
+   <label for="primero"> Primero </label><br>
+   <input style="scale:1.5 ;" id="segundo"type="radio" name="ciclo" value="segundo">
+   <label for="segundo"> Segundo </label><br>
+   <input style="scale:1.5 ;" id="tercero"type="radio" name="ciclo" value="tercero">
+   <label for="tercero"> Tercero </label><br>
+   <input style="scale:1.5 ;" id="cuarto" type="radio" name="ciclo" value="cuarto">
+   <label for="cuarto"> Cuarto </label><br>
+   <input style="scale:1.5 ;" id="quinto" type="radio" name="ciclo" value="quinto">
+   <label for="quinto"> Quinto </label><br>
+   <input style="scale:1.5 ;" id="sexto" type="radio"  name="ciclo" value="sexto">
+   <label for="sexto"> Sexto </label><br>
+  
+  
+   <label for="fecha">SELECION fecha 
+   <input type="date" style="font-size: 25px;" name="fecha" id="fecha" >
+  
+   </label>
+  
+   
+   <br><br>
+  
+   <label for="clave"  > Contraseña: 
+    <input type="password" id="clave" name="clave" minlength="8" maxlength="12" 
+            placeholder="Minimo 8 y maximo 12"  >
+  
+  </label>
+  
+  <br><br>
+  
+  <label for="correo"  > Correo electronico: 
+  <input type="email" id="correo" name="correo"   placeholder="solo @certus.edu.pe" 
+   pattern="[a-zA-Z0-9]+@certus\.edu.\.pe" >
+     
+  </label>
+  
+  <br><br>
+  
+  <label for="resetear"  > LIMPIAR 
+    <input type="reset" id="resetear" name="resetear"     >
+  
+  </label>
+  
+<button style="font-size: 30px;" type="button"
+onclick="FCaptureNombre()">   copiar Nombre a observaciones </button>
+<br> <br> <br>
+
+
+   <br><br>
+  
+  <button type="submit" style="font-size: 25px;"  >  ENVIAR  </button>
+  
+  </form>
 
 
 
 
-
-
-
+ </article>
 
 
 
